@@ -1,0 +1,12 @@
+{
+  "name": "k3s-kube-demo",
+  "version": "0.1.0",
+  "private": true,
+  "description": "Deploying Demo Apps in Lightweight Kubernetes K3s Cluster.",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "mdsanima",
+  "license": "Apache-2.0"
+}
