@@ -51,3 +51,35 @@ to docker hub repository.
 
 Do not execute this command this is a only example, for each application this command is available
 inside apps folder on `README.md` files.
+
+## Debug Application
+
+This is a documentation how to troubleshooting your application.
+
+### Get a Shell to a Running Container
+
+Create the simple nginx pod:
+
+```shell
+kubectl run nginx-shell-demo --image=nginx
+```
+
+Verify that the container is running:
+
+```shell
+kubectl get pod nginx-shell-demo
+```
+
+Get a shell to the running container:
+
+```shell
+kubectl exec --stdin --tty nginx-shell-demo -- /bin/bash
+```
+
+Now you are inside the pod.
+
+Delete the demo pod:
+
+```shell
+kubectl delete pod nginx-shell-demo
+```
