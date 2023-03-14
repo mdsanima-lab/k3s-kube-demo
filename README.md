@@ -37,3 +37,17 @@ docker buildx inspect --bootstrap
 
 Here is a new builder instance with the name **mybilder**, switched to it, and inspected it. Now you
 can build multi-arch images for each application.
+
+### Example Command
+
+This is a example command, type in `WSL` terminal:
+
+```shell
+docker buildx build --platform linux/amd64,linux/arm64 -t mdsanima/app --push .
+```
+
+This command create multi-arch images for `linux/amd64` and `linux/arm64` architecture then pushing
+to docker hub repository.
+
+Do not execute this command this is a only example, for each application this command is available
+inside apps folder on `README.md` files.
