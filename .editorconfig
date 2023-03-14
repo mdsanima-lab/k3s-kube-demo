@@ -38,7 +38,7 @@ max_line_length = 120
 [*.json]
 indent_size = 2
 indent_style = space
-end_of_line = crlf
+end_of_line = lf
 
 [*.md]
 indent_size = 2

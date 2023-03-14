@@ -14,3 +14,26 @@ There is a two different application on this monorepo:
 
 - [k3s-hello-world](/apps/k3s-hello-world/README.md)
 - [k3s-hello-mdsanima](apps/k3s-hello-mdsanima/README.md)
+
+## Building Multi-Arch Images
+
+This is a monorepo contains two different application. Each app is building for multi-arch images
+and pushing in [hub.docker.com](https://hub.docker.com/u/mdsanima) site.
+
+First start Docker Desktop on Windows and check our builders, type in `WSL` terminal:
+
+```shell
+docker buildx ls
+```
+
+We are currently using the default builder. Now create a new builder, which gives us access to new
+multi-arch features, type in `WSL` terminal:
+
+```shell
+docker buildx create --name mybuilder
+docker buildx use mybuilder
+docker buildx inspect --bootstrap
+```
+
+Here is a new builder instance with the name **mybilder**, switched to it, and inspected it. Now you
+can build multi-arch images for each application.
