@@ -83,3 +83,20 @@ Delete the demo pod:
 ```shell
 kubectl delete pod nginx-shell-demo
 ```
+
+### Configure Hosts Name
+
+Edit your `/etc/hosts` file and add this line:
+
+```shell
+192.168.1.30 kube.mdsanima.local rpi-1.node.test hello.dev.local
+```
+
+Now you can assess at the URL like this [http://kube.mdsanima.local](http://kube.mdsanima.local)
+or this [http://rpi-1.node.test:31337](http://rpi-1.node.test:31337) specific node port services.
+You can type anything you want.
+
+This config may be different of any your node. Also you can change it in `WSL` and if you want to
+access browser on Windows you need to change it in other location. Open the Windows Terminal with
+**Administrator** mode on your `WSL` system. I use `Ubuntu 22.04 LTS Jammy`. Type this command
+`nano /mnt/c/Windows/System32/drivers/etc/hosts` and add your host name.
