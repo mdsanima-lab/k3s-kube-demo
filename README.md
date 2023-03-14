@@ -100,3 +100,23 @@ This config may be different of any your node. Also you can change it in `WSL` a
 access browser on Windows you need to change it in other location. Open the Windows Terminal with
 **Administrator** mode on your `WSL` system. I use `Ubuntu 22.04 LTS Jammy`. Type this command
 `nano /mnt/c/Windows/System32/drivers/etc/hosts` and add your host name.
+
+## NGINX Ingress Controller
+
+Here is a instruction guide for install the
+[NGINX Ingress Controller](https://kubernetes.github.io/ingress-nginx/deploy/) from official
+documentation site.
+
+You can deploy the ingress controller with the following command:
+
+```shell
+kubectl apply -f https://raw.githubusercontent.com/kubernetes/ingress-nginx/controller-v1.6.4/deploy/static/provider/cloud/deploy.yaml
+```
+
+Now check the namespace, pods and services with short version commands:
+
+```shell
+kubectl get ns
+kubectl get pod --namespace=ingress-nginx
+kubectl get svc --namespace=ingress-nginx
+```
