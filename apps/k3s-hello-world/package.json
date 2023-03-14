@@ -3,10 +3,13 @@
   "version": "0.1.0",
   "private": true,
   "description": "This is a simple Node.js Hello World Web App for testing Lightweight Kubernetes K3s Cluster.",
-  "main": "index.js",
+  "main": "index.mjs",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "start": "node index.mjs"
   },
   "author": "mdsanima",
-  "license": "Apache-2.0"
+  "license": "Apache-2.0",
+  "dependencies": {
+    "express": "^4.18.2"
+  }
 }
