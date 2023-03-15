@@ -1,0 +1,23 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: hello-mdsanima
+spec:
+  replicas: 10
+  selector:
+    matchLabels:
+      app: hello-mdsanima
+  template:
+    metadata:
+      labels:
+        app: hello-mdsanima
+    spec:
+      containers:
+      - name: hello-mdsanima
+        image: mdsanima/k3s-hello-mdsanima:latest
+        resources:
+          limits:
+            memory: "256Mi"
+            cpu: "250m"
+        ports:
+        - containerPort: 3000
