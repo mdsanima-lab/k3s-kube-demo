@@ -1,6 +1,6 @@
 {
   "name": "k3s-hello-world",
-  "version": "0.1.0",
+  "version": "0.1.1",
   "private": true,
   "description": "This is a simple Node.js Hello World Web App for testing Lightweight Kubernetes K3s Cluster.",
   "main": "index.mjs",

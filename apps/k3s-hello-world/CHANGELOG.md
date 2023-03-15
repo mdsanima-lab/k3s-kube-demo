@@ -9,6 +9,19 @@ and documentation for commit guidelines. Also you should check
 Docomentation for _K3s Hello World_ is available at this repository on [README.md](README.md)
 file be sure to check it.
 
+### [0.1.1](https://github.com/mdsanima-lab/k3s-kube-demo/compare/@apps/k3s-hello-world@0.1.0...@apps/k3s-hello-world@0.1.1) (2023-03-15)
+
+
+### BUG FIXES
+
+* add deployment service and ingress ([f719e01](https://github.com/mdsanima-lab/k3s-kube-demo/commit/f719e01b5a569e72749862391d9f9fea2e1be9be))
+* new hello message ([da17993](https://github.com/mdsanima-lab/k3s-kube-demo/commit/da179937336413c9a4a0fd9aa5ce2d1be8778e9f))
+
+
+### DOCUMENTATION
+
+* setup deploy from file instruction ([778537d](https://github.com/mdsanima-lab/k3s-kube-demo/commit/778537d8020adcda916634d7b392c27553b5ce47))
+
 ## 0.1.0 (2023-03-14)
 
 
