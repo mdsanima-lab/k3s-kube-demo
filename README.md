@@ -89,7 +89,7 @@ kubectl delete pod nginx-shell-demo
 Edit your `/etc/hosts` file and add this line:
 
 ```shell
-192.168.1.30 kube.mdsanima.local rpi-1.node.test hello.dev.local
+192.168.1.30 kube.mdsanima.local rpi-1.node.test hello.dev.local mdsanima.dev.local
 ```
 
 Now you can assess at the URL like this [http://kube.mdsanima.local](http://kube.mdsanima.local)
