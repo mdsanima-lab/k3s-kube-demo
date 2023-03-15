@@ -9,6 +9,14 @@ and documentation for commit guidelines. Also you should check
 Docomentation for _K3s Hello MDSANIMA_ is available at this repository on [README.md](README.md)
 file be sure to check it.
 
+## [0.2.0](https://github.com/mdsanima-lab/k3s-kube-demo/compare/@apps/k3s-hello-mdsanima@0.1.0...@apps/k3s-hello-mdsanima@0.2.0) (2023-03-15)
+
+
+### BUG FIXES
+
+* latest nextjs setup from create-react-app ([2349e9c](https://github.com/mdsanima-lab/k3s-kube-demo/commit/2349e9c0b45b2bf75701924cb57cf0a7d03cd6db))
+* linting files ([5f7db71](https://github.com/mdsanima-lab/k3s-kube-demo/commit/5f7db7100fa0e4068d7fc71a34307260d9edc46f))
+
 ## 0.1.0 (2023-03-15)
 
 
