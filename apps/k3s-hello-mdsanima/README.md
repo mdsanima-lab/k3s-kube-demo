@@ -12,12 +12,12 @@ Then you can build multi-arch images for this application, type this command in 
 ```shell
 docker buildx build \
   --platform linux/amd64,linux/arm64,linux/arm/v7 \
-  -t mdsanima/k3s-hello-mdsanima:0.1.0 \
+  -t mdsanima/k3s-hello-mdsanima:0.3.0 \
   --push .
 ```
 
 This command create multi-arch images for `linux/amd64`, `linux/arm64` and `linux/arm/v7`
-architecture then pushing to docker hub repository with tag `0.1.0`. Also you can remove this tag
+architecture then pushing to docker hub repository with tag `0.3.0`. Also you can remove this tag
 then images tag is a `latest`. For testing you can also remove the `--push` option to check if
 images is proper builded.
 
@@ -71,6 +71,24 @@ and type `192.168.1.30:31337` to check the result or simple `curl <NODE_IP:PORT>
 type any of your node ip address here. Remember my ip address and port may differ from yours, you
 need to check it on your cluster by typing `kubectl get svc`. Also remember thats with this method
 of deployment the port is randomly generated in the range **30000-32767** by Kubernetes.
+
+## Setup Deploy `YAML`
+
+This is a instruction guide for deploy our app with `YAML` files and `kubectl` command.
+
+### Applying Deployment
+
+Now is time to deploy our application from file with one command.
+
+Applying deployment and services from file with the following one command:
+
+```shell
+kubectl apply -f deploy.yaml
+```
+
+Open the browser and go to [http://mdsanima.dev.local](http://mdsanima.dev.local) site or check
+the API here [http://mdsanima.dev.local/api/hello](http://mdsanima.dev.local/api/hello) and get
+hostname from your pod.
 
 ## More Info
 
