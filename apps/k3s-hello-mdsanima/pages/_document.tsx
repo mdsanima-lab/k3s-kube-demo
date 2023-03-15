@@ -1,4 +1,6 @@
-import { Html, Head, Main, NextScript } from 'next/document'
+/** Copyright © 2023 Marcin Różewski MDSANIMA */
+
+import { Head, Html, Main, NextScript } from "next/document"
 
 export default function Document() {
   return (
