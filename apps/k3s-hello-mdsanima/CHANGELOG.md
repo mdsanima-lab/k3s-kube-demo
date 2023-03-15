@@ -9,6 +9,24 @@ and documentation for commit guidelines. Also you should check
 Docomentation for _K3s Hello MDSANIMA_ is available at this repository on [README.md](README.md)
 file be sure to check it.
 
+## [0.3.0](https://github.com/mdsanima-lab/k3s-kube-demo/compare/@apps/k3s-hello-mdsanima@0.2.0...@apps/k3s-hello-mdsanima@0.3.0) (2023-03-15)
+
+
+### FEATURES
+
+* new simple home page ([673d1d3](https://github.com/mdsanima-lab/k3s-kube-demo/commit/673d1d3add872493b8ddeca03ed5b0afb18693bc))
+
+
+### BUG FIXES
+
+* add deployment service and ingress ([13ad037](https://github.com/mdsanima-lab/k3s-kube-demo/commit/13ad03738daf7e01da525406fb56450c46d9efec))
+* api hello message and hostname response ([92c4215](https://github.com/mdsanima-lab/k3s-kube-demo/commit/92c42151f99de4151acd4709401fad6a04f70b29))
+
+
+### DOCUMENTATION
+
+* instruction for setup deploy from `.yaml` file ([6b27754](https://github.com/mdsanima-lab/k3s-kube-demo/commit/6b27754e4edb432007a0edf6b7264933683489da))
+
 ## [0.2.0](https://github.com/mdsanima-lab/k3s-kube-demo/compare/@apps/k3s-hello-mdsanima@0.1.0...@apps/k3s-hello-mdsanima@0.2.0) (2023-03-15)
 
 

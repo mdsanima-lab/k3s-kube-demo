@@ -1,6 +1,6 @@
 {
   "name": "k3s-hello-mdsanima",
-  "version": "0.2.0",
+  "version": "0.3.0",
   "private": true,
   "description": "This is a Next.js Hello World MDSANIMA Web App for testing Lightweight Kubernetes K3s Cluster.",
   "standard-version": {
