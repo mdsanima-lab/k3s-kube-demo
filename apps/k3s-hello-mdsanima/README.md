@@ -2,74 +2,78 @@
 
 This is a Next.js Hello World MDSANIMA Web App for testing Lightweight Kubernetes K3s Cluster.
 
-## With Docker
+## Building Docker Image
 
-This examples shows how to use Docker with Next.js based on the [deployment documentation](https://nextjs.org/docs/deployment#docker-image). Additionally, it contains instructions for deploying to Google Cloud Run. However, you can use any container-based deployment host.
+First you must check [this instruction](../../README.md#building-multi-arch-images) for setup
+building multi-arch images.
 
-## How to use
+Then you can build multi-arch images for this application, type this command in `WSL` terminal:
 
-Execute [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app) with [npm](https://docs.npmjs.com/cli/init), [Yarn](https://yarnpkg.com/lang/en/docs/cli/create/), or [pnpm](https://pnpm.io) to bootstrap the example:
-
-```bash
-npx create-next-app --example with-docker nextjs-docker
-# or
-yarn create next-app --example with-docker nextjs-docker
-# or
-pnpm create next-app --example with-docker nextjs-docker
+```shell
+docker buildx build \
+  --platform linux/amd64,linux/arm64,linux/arm/v7 \
+  -t mdsanima/k3s-hello-mdsanima:0.1.0 \
+  --push .
 ```
 
-## Using Docker
+This command create multi-arch images for `linux/amd64`, `linux/arm64` and `linux/arm/v7`
+architecture then pushing to docker hub repository with tag `0.1.0`. Also you can remove this tag
+then images tag is a `latest`. For testing you can also remove the `--push` option to check if
+images is proper builded.
 
-1. [Install Docker](https://docs.docker.com/get-docker/) on your machine.
-1. Build your container: `docker build -t nextjs-docker .`.
-1. Run your container: `docker run -p 3000:3000 nextjs-docker`.
+Docker image pushed to [hub.docker.com](https://hub.docker.com/r/mdsanima/k3s-hello-mdsanima)
+repository with this [tags](https://hub.docker.com/r/mdsanima/k3s-hello-mdsanima/tags).
 
-You can view your images created with `docker images`.
+Also you can build this images for each architecture separately like this `--platform linux/amd64`
+and then upload them all to the repository.
 
-### In existing projects
+For testing your image also you can build and run your container like this:
 
-To add support for Docker to an existing project, just copy the `Dockerfile` into the root of the project and add the following to the `next.config.js` file:
-
-```js
-// next.config.js
-module.exports = {
-  // ... rest of the configuration.
-  output: "standalone",
-}
+```shell
+docker build -t mdsanima/k3s-hello-mdsanima .
+docker run -p 3000:3000 mdsanima/k3s-hello-mdsanima
 ```
 
-This will build the project as a standalone app inside the Docker image.
-
-## Deploying to Google Cloud Run
-
-1. Install the [Google Cloud SDK](https://cloud.google.com/sdk/docs/install) so you can use `gcloud` on the command line.
-1. Run `gcloud auth login` to log in to your account.
-1. [Create a new project](https://cloud.google.com/run/docs/quickstarts/build-and-deploy) in Google Cloud Run (e.g. `nextjs-docker`). Ensure billing is turned on.
-1. Build your container image using Cloud Build: `gcloud builds submit --tag gcr.io/PROJECT-ID/helloworld --project PROJECT-ID`. This will also enable Cloud Build for your project.
-1. Deploy to Cloud Run: `gcloud run deploy --image gcr.io/PROJECT-ID/helloworld --project PROJECT-ID --platform managed`. Choose a region of your choice.
-
-   - You will be prompted for the service name: press Enter to accept the default name, `helloworld`.
-   - You will be prompted for [region](https://cloud.google.com/run/docs/quickstarts/build-and-deploy#follow-cloud-run): select the region of your choice, for example `us-central1`.
-   - You will be prompted to **allow unauthenticated invocations**: respond `y`.
-
-Or click the button below, authorize the script, and select the project and region when prompted:
-
-[![Run on Google Cloud](https://deploy.cloud.run/button.svg)](https://deploy.cloud.run/?git_repo=https://github.com/vercel/next.js.git&dir=examples/with-docker)
+Now you can view your images created with `docker images` command.
 
 ## Running Locally
 
-First, run the development server:
+First install dependencies and run the development server:
 
-```bash
+```shell
+npm ci
 npm run dev
-# or
-yarn dev
 ```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+Then open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+API routes can be accessed on [http://localhost:3000/api/hello](http://localhost:3000/api/hello).
 
-You can start editing the page by modifying `pages/index.js`. The page auto-updates as you edit the file.
+Now write your code and go to the next step.
 
-[API routes](https://nextjs.org/docs/api-routes/introduction) can be accessed on [http://localhost:3000/api/hello](http://localhost:3000/api/hello). This endpoint can be edited in `pages/api/hello.js`.
+## Setup Deploy `CLI`
 
-The `pages/api` directory is mapped to `/api/*`. Files in this directory are treated as [API routes](https://nextjs.org/docs/api-routes/introduction) instead of React pages.
+This is a instruction guide for deploy our app with `CLI` command line tools and `kubectl` command.
+
+### Create Deployment
+
+The code and image was created and pushed to repository now is time to creating the deployment and
+service in your k3s cluster:
+
+```shell
+kubectl create deploy hello-mdsanima --image=mdsanima/k3s-hello-mdsanima:latest --replicas=6
+kubectl expose deploy hello-mdsanima --type=LoadBalancer --port=3000
+kubectl get pod -o wide
+kubectl get svc
+```
+
+Deployment and service is running with 6 replicas set and with load balancer. Now open the browser
+and type `192.168.1.30:31337` to check the result or simple `curl <NODE_IP:PORT>` method. You can
+type any of your node ip address here. Remember my ip address and port may differ from yours, you
+need to check it on your cluster by typing `kubectl get svc`. Also remember thats with this method
+of deployment the port is randomly generated in the range **30000-32767** by Kubernetes.
+
+## More Info
+
+That's it! Our application is running in _Lightweight Kubernetes K3s Cluster_ and images is building
+with multi architecture. For more command and information check out the first simple Node.js express
+application named [k3s-hello-world](../k3s-hello-world/README.md) in this repository.
