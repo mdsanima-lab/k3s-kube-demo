@@ -7,7 +7,7 @@ const app = express()
 const PORT = 3000
 
 app.get("/", (req, res) => {
-  const helloMessage = `Hello from the K3s Cluster POD: ${os.hostname()}`
+  const helloMessage = `Hello from the Lightweight Kubernetes K3s Cluster POD: ${os.hostname()}`
   console.log(helloMessage)
   res.send(helloMessage)
 })
