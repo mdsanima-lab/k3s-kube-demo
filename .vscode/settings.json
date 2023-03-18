@@ -1,0 +1,8 @@
+{
+  "yaml.schemas": {
+    "kubernetes://schema/apps/v1@deployment+v1@service": [
+      "/apps/k3s-hello-mdsanima/deploy.yaml",
+      "/apps/k3s-hello-world/deploy.yaml"
+    ]
+  }
+}
