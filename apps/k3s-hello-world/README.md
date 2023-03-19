@@ -12,12 +12,12 @@ Then you can build multi-arch images for this application, type this command in 
 ```shell
 docker buildx build \
   --platform linux/amd64,linux/arm64,linux/arm/v7 \
-  -t mdsanima/k3s-hello-world:0.1.1 \
+  -t mdsanima/k3s-hello-world:0.1.2 \
   --push .
 ```
 
 This command create multi-arch images for `linux/amd64`, `linux/arm64` and `linux/arm/v7`
-architecture then pushing to docker hub repository with tag `0.1.1`. Also you can remove this tag
+architecture then pushing to docker hub repository with tag `0.1.2`. Also you can remove this tag
 then images tag is a `latest`. For testing you can also remove the `--push` option to check if
 images is proper builded.
 
@@ -95,7 +95,7 @@ The `CLUSTER_IP` is changing and this commands is a only example how to use. The
 your to new line and show output from our node express app with pod name like this example:
 
 ```shell
-Hello from the Lightweight Kubernetes K3s Cluster POD: hello-world-7d49d9c6c8-k2tdk
+Hello from the K3s Cluster POD: hello-world-7d49d9c6c8-k2tdk
 ```
 
 ### Scale Deployment
@@ -121,13 +121,13 @@ terminal several time:
 
 ```shell
 $ curl 10.43.255.9:3000; echo
-Hello from the Lightweight Kubernetes K3s Cluster POD: hello-world-7d49d9c6c8-k2tdk
+Hello from the K3s Cluster POD: hello-world-7d49d9c6c8-k2tdk
 $ curl 10.43.255.9:3000; echo
-Hello from the Lightweight Kubernetes K3s Cluster POD: hello-world-7d49d9c6c8-ff7b5
+Hello from the K3s Cluster POD: hello-world-7d49d9c6c8-ff7b5
 $ curl 10.43.255.9:3000; echo
-Hello from the Lightweight Kubernetes K3s Cluster POD: hello-world-7d49d9c6c8-vt5xp
+Hello from the K3s Cluster POD: hello-world-7d49d9c6c8-vt5xp
 $ curl 10.43.255.9:3000; echo
-Hello from the Lightweight Kubernetes K3s Cluster POD: hello-world-7d49d9c6c8-67cq6
+Hello from the K3s Cluster POD: hello-world-7d49d9c6c8-67cq6
 ```
 
 Now you can see, the each response is different. The load is balanced across different pods.
@@ -201,7 +201,7 @@ Firs change your code in `index.mjs` file then build the new image, push to dock
 the terminal:
 
 ```shell
-kubectl set image deployment hello-world k3s-hello-world=mdsanima/k3s-hello-world:0.1.1
+kubectl set image deployment hello-world k3s-hello-world=mdsanima/k3s-hello-world:0.1.2
 kubectl rollout status daploy hello-world
 ```
 
