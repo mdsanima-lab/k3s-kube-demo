@@ -9,6 +9,19 @@ and documentation for commit guidelines. Also you should check
 Docomentation for _K3s Hello MDSANIMA_ is available at this repository on [README.md](README.md)
 file be sure to check it.
 
+### [0.3.1](https://github.com/mdsanima-lab/k3s-kube-demo/compare/@apps/k3s-hello-mdsanima@0.3.0...@apps/k3s-hello-mdsanima@0.3.1) (2023-03-19)
+
+
+### FEATURES
+
+* add rgb definition mdsanima colors palette ([ed3977b](https://github.com/mdsanima-lab/k3s-kube-demo/commit/ed3977b78a0923e03ffb5f7a53ef48a2a1b944f0))
+
+
+### BUG FIXES
+
+* hello message and hostname fetch in home page ([174344e](https://github.com/mdsanima-lab/k3s-kube-demo/commit/174344eefb80aefca14df64ff745ca37fda97536))
+* removed unnecessary stuff from css file ([2454934](https://github.com/mdsanima-lab/k3s-kube-demo/commit/24549348be1e41443e177597914a30dd280274cd))
+
 ## [0.3.0](https://github.com/mdsanima-lab/k3s-kube-demo/compare/@apps/k3s-hello-mdsanima@0.2.0...@apps/k3s-hello-mdsanima@0.3.0) (2023-03-15)
 
 
