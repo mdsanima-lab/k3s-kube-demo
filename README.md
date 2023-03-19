@@ -101,6 +101,17 @@ access browser on Windows you need to change it in other location. Open the Wind
 **Administrator** mode on your `WSL` system. I use `Ubuntu 22.04 LTS Jammy`. Type this command
 `nano /mnt/c/Windows/System32/drivers/etc/hosts` and add your host name.
 
+### Restart Deployment
+
+When new image is pushing to the repository you can restart the deployment:
+
+```shell
+kubectl rollout restart deploy hello-world
+kubectl rollout restart deploy hello-mdsanima
+```
+
+After executing these commands, new images will be downloaded.
+
 ## NGINX Ingress Controller
 
 Here is a instruction guide for install the
