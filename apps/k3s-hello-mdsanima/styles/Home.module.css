@@ -1,4 +1,4 @@
-/** Copyright © 2023 Marcin Różewski MDSANIMA */
+/* Copyright © 2023 Marcin Różewski MDSANIMA */
 
 .main {
   min-height: 100vh;
@@ -71,10 +71,11 @@
 
 .center {
   display: flex;
+  flex-direction: row;
   justify-content: center;
   align-items: center;
-  position: relative;
-  padding: 4rem 0;
+  align-content: center;
+  padding: 2rem 0;
 }
 
 .center::before {
@@ -260,4 +261,22 @@
   to {
     transform: rotate(0deg);
   }
+}
+
+.column {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  align-content: center;
+  min-height: 100vh;
+}
+
+.message {
+  color: var(--color-mdsanima-github);
+}
+
+.hostname {
+  color: var(--color-mdsanima-red);
+  padding: 1rem;
 }
