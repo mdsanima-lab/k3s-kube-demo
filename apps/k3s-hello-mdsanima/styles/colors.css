@@ -1,0 +1,412 @@
+/* Copyright © 2023 Marcin Różewski MDSANIMA */
+
+/* RGB Definition MDSANIMA Colors Palette. */
+:root {
+  /* DEFAULT 500 SHADES in RGB Values. */
+  --color-mdsanima-cyan: rgb(6, 182, 212);
+  --color-mdsanima-sky: rgb(14, 165, 233);
+  --color-mdsanima-blue: rgb(59, 130, 246);
+  --color-mdsanima-indigo: rgb(99, 102, 241);
+  --color-mdsanima-violet: rgb(139, 92, 246);
+  --color-mdsanima-purple: rgb(168, 85, 247);
+  --color-mdsanima-fuchsia: rgb(217, 70, 239);
+  --color-mdsanima-pink: rgb(236, 72, 153);
+  --color-mdsanima-rose: rgb(244, 63, 94);
+  --color-mdsanima-red: rgb(239, 68, 68);
+  --color-mdsanima-orange: rgb(249, 115, 22);
+  --color-mdsanima-amber: rgb(245, 158, 11);
+  --color-mdsanima-yellow: rgb(234, 179, 8);
+  --color-mdsanima-lime: rgb(132, 204, 22);
+  --color-mdsanima-green: rgb(34, 197, 94);
+  --color-mdsanima-emerald: rgb(16, 185, 129);
+  --color-mdsanima-teal: rgb(20, 184, 166);
+  --color-mdsanima-graphe: rgb(46, 131, 180);
+  --color-mdsanima-giter: rgb(71, 107, 178);
+  --color-mdsanima-slate: rgb(100, 116, 139);
+  --color-mdsanima-gray: rgb(107, 114, 128);
+  --color-mdsanima-zinc: rgb(113, 113, 122);
+  --color-mdsanima-neutral: rgb(115, 115, 115);
+  --color-mdsanima-stone: rgb(120, 113, 108);
+  --color-mdsanima-basic: rgb(119, 119, 119);
+  --color-mdsanima-github: rgb(53, 57, 65);
+  --color-mdsanima-night: rgb(43, 53, 88);
+  --color-mdsanima-storm: rgb(244, 82, 112);
+  --color-mdsanima-tokyo: rgb(84, 157, 170);
+
+  /* SHADE 01-CYAN in RGB Values. */
+  --color-mdsanima-cyan-100: rgb(236, 254, 255);
+  --color-mdsanima-cyan-150: rgb(207, 250, 254);
+  --color-mdsanima-cyan-200: rgb(165, 243, 252);
+  --color-mdsanima-cyan-300: rgb(103, 232, 249);
+  --color-mdsanima-cyan-400: rgb(34, 211, 238);
+  --color-mdsanima-cyan-500: rgb(6, 182, 212);
+  --color-mdsanima-cyan-600: rgb(8, 145, 178);
+  --color-mdsanima-cyan-700: rgb(14, 116, 144);
+  --color-mdsanima-cyan-800: rgb(21, 94, 117);
+  --color-mdsanima-cyan-900: rgb(22, 78, 99);
+
+  /* SHADE 02-SKY in RGB Values. */
+  --color-mdsanima-sky-100: rgb(240, 249, 255);
+  --color-mdsanima-sky-150: rgb(224, 242, 254);
+  --color-mdsanima-sky-200: rgb(186, 230, 253);
+  --color-mdsanima-sky-300: rgb(125, 211, 252);
+  --color-mdsanima-sky-400: rgb(56, 189, 248);
+  --color-mdsanima-sky-500: rgb(14, 165, 233);
+  --color-mdsanima-sky-600: rgb(2, 132, 199);
+  --color-mdsanima-sky-700: rgb(3, 105, 161);
+  --color-mdsanima-sky-800: rgb(7, 89, 133);
+  --color-mdsanima-sky-900: rgb(12, 74, 110);
+
+  /* SHADE 03-BLUE in RGB Values. */
+  --color-mdsanima-blue-100: rgb(239, 246, 255);
+  --color-mdsanima-blue-150: rgb(219, 234, 254);
+  --color-mdsanima-blue-200: rgb(191, 219, 254);
+  --color-mdsanima-blue-300: rgb(147, 197, 253);
+  --color-mdsanima-blue-400: rgb(96, 165, 250);
+  --color-mdsanima-blue-500: rgb(59, 130, 246);
+  --color-mdsanima-blue-600: rgb(37, 99, 235);
+  --color-mdsanima-blue-700: rgb(29, 78, 216);
+  --color-mdsanima-blue-800: rgb(30, 64, 175);
+  --color-mdsanima-blue-900: rgb(30, 58, 138);
+
+  /* SHADE 04-INDIGO in RGB Values. */
+  --color-mdsanima-indigo-100: rgb(238, 242, 255);
+  --color-mdsanima-indigo-150: rgb(224, 231, 255);
+  --color-mdsanima-indigo-200: rgb(199, 210, 254);
+  --color-mdsanima-indigo-300: rgb(165, 180, 252);
+  --color-mdsanima-indigo-400: rgb(129, 140, 248);
+  --color-mdsanima-indigo-500: rgb(99, 102, 241);
+  --color-mdsanima-indigo-600: rgb(79, 70, 229);
+  --color-mdsanima-indigo-700: rgb(67, 56, 202);
+  --color-mdsanima-indigo-800: rgb(55, 48, 163);
+  --color-mdsanima-indigo-900: rgb(49, 46, 129);
+
+  /* SHADE 05-VIOLET in RGB Values. */
+  --color-mdsanima-violet-100: rgb(245, 243, 255);
+  --color-mdsanima-violet-150: rgb(237, 233, 254);
+  --color-mdsanima-violet-200: rgb(221, 214, 254);
+  --color-mdsanima-violet-300: rgb(196, 181, 253);
+  --color-mdsanima-violet-400: rgb(167, 139, 250);
+  --color-mdsanima-violet-500: rgb(139, 92, 246);
+  --color-mdsanima-violet-600: rgb(124, 58, 237);
+  --color-mdsanima-violet-700: rgb(109, 40, 217);
+  --color-mdsanima-violet-800: rgb(91, 33, 182);
+  --color-mdsanima-violet-900: rgb(76, 29, 149);
+
+  /* SHADE 06-PURPLE in RGB Values. */
+  --color-mdsanima-purple-100: rgb(250, 245, 255);
+  --color-mdsanima-purple-150: rgb(243, 232, 255);
+  --color-mdsanima-purple-200: rgb(233, 213, 255);
+  --color-mdsanima-purple-300: rgb(216, 180, 254);
+  --color-mdsanima-purple-400: rgb(192, 132, 252);
+  --color-mdsanima-purple-500: rgb(168, 85, 247);
+  --color-mdsanima-purple-600: rgb(147, 51, 234);
+  --color-mdsanima-purple-700: rgb(126, 34, 206);
+  --color-mdsanima-purple-800: rgb(107, 33, 168);
+  --color-mdsanima-purple-900: rgb(88, 28, 135);
+
+  /* SHADE 07-FUCHSIA in RGB Values. */
+  --color-mdsanima-fuchsia-100: rgb(253, 244, 255);
+  --color-mdsanima-fuchsia-150: rgb(250, 232, 255);
+  --color-mdsanima-fuchsia-200: rgb(245, 208, 254);
+  --color-mdsanima-fuchsia-300: rgb(240, 171, 252);
+  --color-mdsanima-fuchsia-400: rgb(232, 121, 249);
+  --color-mdsanima-fuchsia-500: rgb(217, 70, 239);
+  --color-mdsanima-fuchsia-600: rgb(192, 38, 211);
+  --color-mdsanima-fuchsia-700: rgb(162, 28, 175);
+  --color-mdsanima-fuchsia-800: rgb(134, 25, 143);
+  --color-mdsanima-fuchsia-900: rgb(112, 26, 117);
+
+  /* SHADE 08-PINK in RGB Values. */
+  --color-mdsanima-pink-100: rgb(253, 242, 248);
+  --color-mdsanima-pink-150: rgb(252, 231, 243);
+  --color-mdsanima-pink-200: rgb(251, 207, 232);
+  --color-mdsanima-pink-300: rgb(249, 168, 212);
+  --color-mdsanima-pink-400: rgb(244, 114, 182);
+  --color-mdsanima-pink-500: rgb(236, 72, 153);
+  --color-mdsanima-pink-600: rgb(219, 39, 119);
+  --color-mdsanima-pink-700: rgb(190, 24, 93);
+  --color-mdsanima-pink-800: rgb(157, 23, 77);
+  --color-mdsanima-pink-900: rgb(131, 24, 67);
+
+  /* SHADE 09-ROSE in RGB Values. */
+  --color-mdsanima-rose-100: rgb(255, 241, 242);
+  --color-mdsanima-rose-150: rgb(255, 228, 230);
+  --color-mdsanima-rose-200: rgb(254, 205, 211);
+  --color-mdsanima-rose-300: rgb(253, 164, 175);
+  --color-mdsanima-rose-400: rgb(251, 113, 133);
+  --color-mdsanima-rose-500: rgb(244, 63, 94);
+  --color-mdsanima-rose-600: rgb(225, 29, 72);
+  --color-mdsanima-rose-700: rgb(190, 18, 60);
+  --color-mdsanima-rose-800: rgb(159, 18, 57);
+  --color-mdsanima-rose-900: rgb(136, 19, 55);
+
+  /* SHADE 10-RED in RGB Values. */
+  --color-mdsanima-red-100: rgb(254, 242, 242);
+  --color-mdsanima-red-150: rgb(254, 226, 226);
+  --color-mdsanima-red-200: rgb(254, 202, 202);
+  --color-mdsanima-red-300: rgb(252, 165, 165);
+  --color-mdsanima-red-400: rgb(248, 113, 113);
+  --color-mdsanima-red-500: rgb(239, 68, 68);
+  --color-mdsanima-red-600: rgb(220, 38, 38);
+  --color-mdsanima-red-700: rgb(185, 28, 28);
+  --color-mdsanima-red-800: rgb(153, 27, 27);
+  --color-mdsanima-red-900: rgb(127, 29, 29);
+
+  /* SHADE 11-ORANGE in RGB Values. */
+  --color-mdsanima-orange-100: rgb(255, 247, 237);
+  --color-mdsanima-orange-150: rgb(255, 237, 213);
+  --color-mdsanima-orange-200: rgb(254, 215, 170);
+  --color-mdsanima-orange-300: rgb(253, 186, 116);
+  --color-mdsanima-orange-400: rgb(251, 146, 60);
+  --color-mdsanima-orange-500: rgb(249, 115, 22);
+  --color-mdsanima-orange-600: rgb(234, 88, 12);
+  --color-mdsanima-orange-700: rgb(194, 65, 12);
+  --color-mdsanima-orange-800: rgb(154, 52, 18);
+  --color-mdsanima-orange-900: rgb(124, 45, 18);
+
+  /* SHADE 12-AMBER in RGB Values. */
+  --color-mdsanima-amber-100: rgb(255, 251, 235);
+  --color-mdsanima-amber-150: rgb(254, 243, 199);
+  --color-mdsanima-amber-200: rgb(253, 230, 138);
+  --color-mdsanima-amber-300: rgb(252, 211, 77);
+  --color-mdsanima-amber-400: rgb(251, 191, 36);
+  --color-mdsanima-amber-500: rgb(245, 158, 11);
+  --color-mdsanima-amber-600: rgb(217, 119, 6);
+  --color-mdsanima-amber-700: rgb(180, 83, 9);
+  --color-mdsanima-amber-800: rgb(146, 64, 14);
+  --color-mdsanima-amber-900: rgb(120, 53, 15);
+
+  /* SHADE 13-YELLOW in RGB Values. */
+  --color-mdsanima-yellow-100: rgb(254, 252, 232);
+  --color-mdsanima-yellow-150: rgb(254, 249, 195);
+  --color-mdsanima-yellow-200: rgb(254, 240, 138);
+  --color-mdsanima-yellow-300: rgb(253, 224, 71);
+  --color-mdsanima-yellow-400: rgb(250, 204, 21);
+  --color-mdsanima-yellow-500: rgb(234, 179, 8);
+  --color-mdsanima-yellow-600: rgb(202, 138, 4);
+  --color-mdsanima-yellow-700: rgb(161, 98, 7);
+  --color-mdsanima-yellow-800: rgb(133, 77, 14);
+  --color-mdsanima-yellow-900: rgb(113, 63, 18);
+
+  /* SHADE 14-LIME in RGB Values. */
+  --color-mdsanima-lime-100: rgb(247, 254, 231);
+  --color-mdsanima-lime-150: rgb(236, 252, 203);
+  --color-mdsanima-lime-200: rgb(217, 249, 157);
+  --color-mdsanima-lime-300: rgb(190, 242, 100);
+  --color-mdsanima-lime-400: rgb(163, 230, 53);
+  --color-mdsanima-lime-500: rgb(132, 204, 22);
+  --color-mdsanima-lime-600: rgb(101, 163, 13);
+  --color-mdsanima-lime-700: rgb(77, 124, 15);
+  --color-mdsanima-lime-800: rgb(63, 98, 18);
+  --color-mdsanima-lime-900: rgb(54, 83, 20);
+
+  /* SHADE 15-GREEN in RGB Values. */
+  --color-mdsanima-green-100: rgb(240, 253, 244);
+  --color-mdsanima-green-150: rgb(220, 252, 231);
+  --color-mdsanima-green-200: rgb(187, 247, 208);
+  --color-mdsanima-green-300: rgb(134, 239, 172);
+  --color-mdsanima-green-400: rgb(74, 222, 128);
+  --color-mdsanima-green-500: rgb(34, 197, 94);
+  --color-mdsanima-green-600: rgb(22, 163, 74);
+  --color-mdsanima-green-700: rgb(21, 128, 61);
+  --color-mdsanima-green-800: rgb(22, 101, 52);
+  --color-mdsanima-green-900: rgb(20, 83, 45);
+
+  /* SHADE 16-EMERALD in RGB Values. */
+  --color-mdsanima-emerald-100: rgb(236, 253, 245);
+  --color-mdsanima-emerald-150: rgb(209, 250, 229);
+  --color-mdsanima-emerald-200: rgb(167, 243, 208);
+  --color-mdsanima-emerald-300: rgb(110, 231, 183);
+  --color-mdsanima-emerald-400: rgb(52, 211, 153);
+  --color-mdsanima-emerald-500: rgb(16, 185, 129);
+  --color-mdsanima-emerald-600: rgb(5, 150, 105);
+  --color-mdsanima-emerald-700: rgb(4, 120, 87);
+  --color-mdsanima-emerald-800: rgb(6, 95, 70);
+  --color-mdsanima-emerald-900: rgb(6, 78, 59);
+
+  /* SHADE 17-TEAL in RGB Values. */
+  --color-mdsanima-teal-100: rgb(240, 253, 250);
+  --color-mdsanima-teal-150: rgb(204, 251, 241);
+  --color-mdsanima-teal-200: rgb(153, 246, 228);
+  --color-mdsanima-teal-300: rgb(94, 234, 212);
+  --color-mdsanima-teal-400: rgb(45, 212, 191);
+  --color-mdsanima-teal-500: rgb(20, 184, 166);
+  --color-mdsanima-teal-600: rgb(13, 148, 136);
+  --color-mdsanima-teal-700: rgb(15, 118, 110);
+  --color-mdsanima-teal-800: rgb(17, 94, 89);
+  --color-mdsanima-teal-900: rgb(19, 78, 74);
+
+  /* SHADE 18-SKY in RGB Values. */
+  --color-mdsanima-graphe-100: rgb(237, 245, 250);
+  --color-mdsanima-graphe-150: rgb(200, 226, 241);
+  --color-mdsanima-graphe-200: rgb(163, 206, 231);
+  --color-mdsanima-graphe-300: rgb(126, 187, 222);
+  --color-mdsanima-graphe-400: rgb(89, 167, 213);
+  --color-mdsanima-graphe-500: rgb(46, 131, 180);
+  --color-mdsanima-graphe-600: rgb(41, 115, 157);
+  --color-mdsanima-graphe-700: rgb(38, 102, 139);
+  --color-mdsanima-graphe-800: rgb(33, 91, 124);
+  --color-mdsanima-graphe-900: rgb(24, 67, 92);
+
+  /* SHADE 19-GITER in RGB Values. */
+  --color-mdsanima-giter-100: rgb(238, 242, 249);
+  --color-mdsanima-giter-150: rgb(204, 215, 237);
+  --color-mdsanima-giter-200: rgb(169, 188, 225);
+  --color-mdsanima-giter-300: rgb(135, 161, 212);
+  --color-mdsanima-giter-400: rgb(101, 135, 200);
+  --color-mdsanima-giter-500: rgb(60, 97, 169);
+  --color-mdsanima-giter-600: rgb(55, 88, 154);
+  --color-mdsanima-giter-700: rgb(43, 69, 120);
+  --color-mdsanima-giter-800: rgb(30, 49, 86);
+  --color-mdsanima-giter-900: rgb(21, 37, 69);
+
+  /* SHADE 20-SLATE in RGB Values. */
+  --color-mdsanima-slate-100: rgb(248, 250, 252);
+  --color-mdsanima-slate-150: rgb(241, 245, 249);
+  --color-mdsanima-slate-200: rgb(226, 232, 240);
+  --color-mdsanima-slate-300: rgb(203, 213, 225);
+  --color-mdsanima-slate-400: rgb(148, 163, 184);
+  --color-mdsanima-slate-500: rgb(100, 116, 139);
+  --color-mdsanima-slate-600: rgb(71, 85, 105);
+  --color-mdsanima-slate-700: rgb(51, 65, 85);
+  --color-mdsanima-slate-800: rgb(30, 41, 59);
+  --color-mdsanima-slate-900: rgb(15, 23, 42);
+
+  /* SHADE 21-GRAY in RGB Values. */
+  --color-mdsanima-gray-100: rgb(249, 250, 251);
+  --color-mdsanima-gray-150: rgb(243, 244, 246);
+  --color-mdsanima-gray-200: rgb(229, 231, 235);
+  --color-mdsanima-gray-300: rgb(209, 213, 219);
+  --color-mdsanima-gray-400: rgb(156, 163, 175);
+  --color-mdsanima-gray-500: rgb(107, 114, 128);
+  --color-mdsanima-gray-600: rgb(75, 85, 99);
+  --color-mdsanima-gray-700: rgb(55, 65, 81);
+  --color-mdsanima-gray-800: rgb(31, 41, 55);
+  --color-mdsanima-gray-900: rgb(17, 24, 39);
+
+  /* SHADE 22-ZINC in RGB Values. */
+  --color-mdsanima-zinc-100: rgb(250, 250, 250);
+  --color-mdsanima-zinc-150: rgb(244, 244, 245);
+  --color-mdsanima-zinc-200: rgb(228, 228, 231);
+  --color-mdsanima-zinc-300: rgb(212, 212, 216);
+  --color-mdsanima-zinc-400: rgb(161, 161, 170);
+  --color-mdsanima-zinc-500: rgb(113, 113, 122);
+  --color-mdsanima-zinc-600: rgb(82, 82, 91);
+  --color-mdsanima-zinc-700: rgb(63, 63, 70);
+  --color-mdsanima-zinc-800: rgb(39, 39, 42);
+  --color-mdsanima-zinc-900: rgb(24, 24, 27);
+
+  /* SHADE 23-NEUTRAL in RGB Values. */
+  --color-mdsanima-neutral-100: rgb(250, 250, 250);
+  --color-mdsanima-neutral-150: rgb(245, 245, 245);
+  --color-mdsanima-neutral-200: rgb(229, 229, 229);
+  --color-mdsanima-neutral-300: rgb(212, 212, 212);
+  --color-mdsanima-neutral-400: rgb(163, 163, 163);
+  --color-mdsanima-neutral-500: rgb(115, 115, 115);
+  --color-mdsanima-neutral-600: rgb(82, 82, 82);
+  --color-mdsanima-neutral-700: rgb(64, 64, 64);
+  --color-mdsanima-neutral-800: rgb(38, 38, 38);
+  --color-mdsanima-neutral-900: rgb(23, 23, 23);
+
+  /* SHADE 24-STONE in RGB Values. */
+  --color-mdsanima-stone-100: rgb(250, 250, 249);
+  --color-mdsanima-stone-150: rgb(245, 245, 244);
+  --color-mdsanima-stone-200: rgb(231, 229, 228);
+  --color-mdsanima-stone-300: rgb(214, 211, 209);
+  --color-mdsanima-stone-400: rgb(168, 162, 158);
+  --color-mdsanima-stone-500: rgb(120, 113, 108);
+  --color-mdsanima-stone-600: rgb(87, 83, 78);
+  --color-mdsanima-stone-700: rgb(68, 64, 60);
+  --color-mdsanima-stone-800: rgb(41, 37, 36);
+  --color-mdsanima-stone-900: rgb(28, 25, 23);
+
+  /* SHADE 25-BASIC in RGB Values. */
+  --color-mdsanima-basic-100: rgb(255, 255, 255);
+  --color-mdsanima-basic-120: rgb(244, 244, 244);
+  --color-mdsanima-basic-140: rgb(238, 238, 238);
+  --color-mdsanima-basic-180: rgb(228, 228, 228);
+  --color-mdsanima-basic-220: rgb(221, 221, 221);
+  --color-mdsanima-basic-260: rgb(212, 212, 212);
+  --color-mdsanima-basic-300: rgb(204, 204, 204);
+  --color-mdsanima-basic-340: rgb(196, 196, 196);
+  --color-mdsanima-basic-380: rgb(187, 187, 187);
+  --color-mdsanima-basic-400: rgb(180, 180, 180);
+  --color-mdsanima-basic-420: rgb(170, 170, 170);
+  --color-mdsanima-basic-440: rgb(164, 164, 164);
+  --color-mdsanima-basic-460: rgb(153, 153, 153);
+  --color-mdsanima-basic-480: rgb(136, 136, 136);
+  --color-mdsanima-basic-500: rgb(119, 119, 119);
+  --color-mdsanima-basic-520: rgb(102, 102, 102);
+  --color-mdsanima-basic-560: rgb(85, 85, 85);
+  --color-mdsanima-basic-600: rgb(68, 68, 68);
+  --color-mdsanima-basic-640: rgb(51, 51, 51);
+  --color-mdsanima-basic-680: rgb(34, 34, 34);
+  --color-mdsanima-basic-700: rgb(28, 28, 28);
+  --color-mdsanima-basic-740: rgb(17, 17, 17);
+  --color-mdsanima-basic-800: rgb(12, 12, 12);
+  --color-mdsanima-basic-900: rgb(0, 0, 0);
+
+  /* SHADE 26-GITHUB in RGB Values. */
+  --color-mdsanima-github-100: rgb(241, 246, 252);
+  --color-mdsanima-github-150: rgb(202, 209, 217);
+  --color-mdsanima-github-200: rgb(103, 167, 251);
+  --color-mdsanima-github-300: rgb(55, 134, 61);
+  --color-mdsanima-github-350: rgb(26, 77, 47);
+  --color-mdsanima-github-400: rgb(22, 35, 57);
+  --color-mdsanima-github-500: rgb(53, 57, 65);
+  --color-mdsanima-github-700: rgb(34, 38, 45);
+  --color-mdsanima-github-800: rgb(23, 27, 34);
+  --color-mdsanima-github-900: rgb(14, 17, 23);
+
+  /* SHADE 27-NIGHT in RGB Values. */
+  --color-mdsanima-night-100: rgb(151, 153, 167);
+  --color-mdsanima-night-120: rgb(121, 124, 152);
+  --color-mdsanima-night-150: rgb(116, 122, 160);
+  --color-mdsanima-night-200: rgb(117, 124, 159);
+  --color-mdsanima-night-250: rgb(127, 131, 176);
+  --color-mdsanima-night-300: rgb(129, 163, 243);
+  --color-mdsanima-night-350: rgb(111, 141, 211);
+  --color-mdsanima-night-400: rgb(102, 131, 184);
+  --color-mdsanima-night-450: rgb(70, 88, 128);
+  --color-mdsanima-night-500: rgb(43, 53, 88);
+  --color-mdsanima-night-550: rgb(66, 71, 96);
+  --color-mdsanima-night-600: rgb(55, 59, 83);
+  --color-mdsanima-night-700: rgb(42, 46, 65);
+  --color-mdsanima-night-800: rgb(34, 35, 50);
+  --color-mdsanima-night-900: rgb(32, 34, 44);
+
+  /* SHADE 28-STORM in RGB Values. */
+  --color-mdsanima-storm-100: rgb(163, 206, 114);
+  --color-mdsanima-storm-120: rgb(132, 168, 92);
+  --color-mdsanima-storm-150: rgb(184, 164, 102);
+  --color-mdsanima-storm-200: rgb(192, 154, 95);
+  --color-mdsanima-storm-250: rgb(190, 152, 96);
+  --color-mdsanima-storm-300: rgb(251, 219, 116);
+  --color-mdsanima-storm-350: rgb(247, 158, 106);
+  --color-mdsanima-storm-400: rgb(242, 123, 124);
+  --color-mdsanima-storm-450: rgb(238, 118, 142);
+  --color-mdsanima-storm-500: rgb(244, 82, 112);
+  --color-mdsanima-storm-550: rgb(209, 74, 77);
+  --color-mdsanima-storm-600: rgb(186, 66, 68);
+  --color-mdsanima-storm-700: rgb(159, 51, 64);
+  --color-mdsanima-storm-800: rgb(127, 53, 62);
+  --color-mdsanima-storm-900: rgb(108, 52, 56);
+
+  /* SHADE 29-TOKYO in RGB Values. */
+  --color-mdsanima-tokyo-100: rgb(189, 249, 248);
+  --color-mdsanima-tokyo-120: rgb(150, 221, 253);
+  --color-mdsanima-tokyo-150: rgb(138, 207, 252);
+  --color-mdsanima-tokyo-200: rgb(113, 189, 239);
+  --color-mdsanima-tokyo-250: rgb(116, 179, 220);
+  --color-mdsanima-tokyo-300: rgb(80, 195, 220);
+  --color-mdsanima-tokyo-350: rgb(68, 185, 213);
+  --color-mdsanima-tokyo-400: rgb(70, 170, 192);
+  --color-mdsanima-tokyo-450: rgb(84, 166, 180);
+  --color-mdsanima-tokyo-500: rgb(84, 157, 170);
+  --color-mdsanima-tokyo-550: rgb(131, 218, 202);
+  --color-mdsanima-tokyo-600: rgb(69, 188, 157);
+  --color-mdsanima-tokyo-700: rgb(39, 122, 117);
+  --color-mdsanima-tokyo-800: rgb(40, 89, 87);
+  --color-mdsanima-tokyo-900: rgb(31, 72, 70);
+}
