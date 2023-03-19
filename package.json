@@ -63,7 +63,19 @@
     "header": "# CHANGELOG\n\nAll notable changes to this project will be documented in this file.\n\nPlease check [standard-version](https://github.com/conventional-changelog/standard-version)\nand documentation for commit guidelines. Also you should check\n[conventional-changelog](https://github.com/mdsanima/conventional-changelog) for more detail.\n\nDocomentation for _K3s Kube Demo_ is available at this repository on [README.md](README.md)\nfile be sure to check it.\n"
   },
   "scripts": {
-    "release": "standard-version --sign --tag-prefix k3s-kube-demo@"
+    "release": "standard-version --sign --tag-prefix k3s-kube-demo@",
+    "major": "npm run release -- --release-as major",
+    "minor": "npm run release -- --release-as minor",
+    "patch": "npm run release -- --release-as patch",
+    "alpha": "npm run release -- --prerelease alpha",
+    "beta": "npm run release -- --prerelease beta",
+    "check-release": "npm run release -- --dry-run",
+    "check-major": "npm run major -- --dry-run",
+    "check-minor": "npm run minor -- --dry-run",
+    "check-patch": "npm run patch -- --dry-run",
+    "check-alpha": "npm run alpha -- --dry-run",
+    "check-beta": "npm run beta -- --dry-run",
+    "test-skip": "npm run release -- --skip.changelog --dry-run"
   },
   "author": "mdsanima",
   "license": "Apache-2.0",

@@ -65,7 +65,19 @@
   },
   "scripts": {
     "start": "node index.mjs",
-    "release": "standard-version --sign --tag-prefix @apps/k3s-hello-world@ --path ."
+    "release": "standard-version --sign --tag-prefix @apps/k3s-hello-world@ --path .",
+    "major": "npm run release -- --release-as major",
+    "minor": "npm run release -- --release-as minor",
+    "patch": "npm run release -- --release-as patch",
+    "alpha": "npm run release -- --prerelease alpha",
+    "beta": "npm run release -- --prerelease beta",
+    "check-release": "npm run release -- --dry-run",
+    "check-major": "npm run major -- --dry-run",
+    "check-minor": "npm run minor -- --dry-run",
+    "check-patch": "npm run patch -- --dry-run",
+    "check-alpha": "npm run alpha -- --dry-run",
+    "check-beta": "npm run beta -- --dry-run",
+    "test-skip": "npm run release -- --skip.changelog --dry-run"
   },
   "author": "mdsanima",
   "license": "Apache-2.0",
