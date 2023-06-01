@@ -1,8 +1,20 @@
 {
   "yaml.schemas": {
-    "kubernetes://schema/apps/v1@deployment+v1@service": [
-      "/apps/k3s-hello-mdsanima/deploy.yaml",
-      "/apps/k3s-hello-world/deploy.yaml"
-    ]
-  }
+    "kubernetes://schema/apps/v1@deployment+kubernetes://schema/v1@service+kubernetes://schema/networking.k8s.io/v1@ingress": [
+      "**/apps/k3s-hello-mdsanima/deploy.yaml",
+      "**/apps/k3s-hello-world/deploy.yaml",
+    ],
+    "kubernetes://schema/apps/v1@deployment": [
+      "**/kubernetes/k3s-hello-mdsanima/deployment.yaml",
+      "**/kubernetes/k3s-hello-world/deployment.yaml",
+    ],
+    "kubernetes://schema/v1@service": [
+      "**/kubernetes/k3s-hello-mdsanima/service.yaml",
+      "**/kubernetes/k3s-hello-world/service.yaml",
+    ],
+    "kubernetes://schema/networking.k8s.io/v1@ingress": [
+      "**/kubernetes/k3s-hello-mdsanima/ingress.yaml",
+      "**/kubernetes/k3s-hello-world/ingress.yaml",
+    ],
+  },
 }
