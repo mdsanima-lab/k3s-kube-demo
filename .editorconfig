@@ -1,4 +1,4 @@
-# Copyright © 2023 Marcin Różewski MDSANIMA
+# Copyright © 2023 MDSANIMA
 
 # https://editorconfig.org
 
@@ -7,14 +7,14 @@ root = true
 [*]
 charset = utf-8
 end_of_line = lf
-indent_size = 2
+indent_size = 4
 indent_style = space
 insert_final_newline = true
 max_line_length = 79
 trim_trailing_whitespace = true
 
 [*.cmd]
-indent_size = 2
+indent_size = 4
 indent_style = space
 
 [*.css]
@@ -45,10 +45,9 @@ end_of_line = lf
 [*.md]
 indent_size = 2
 indent_style = space
-max_line_length = 120
 
 [*.ps1]
-indent_size = 2
+indent_size = 4
 indent_style = space
 
 [*.py]
@@ -58,7 +57,7 @@ indent_style = space
 max_line_length = 120
 
 [*.sh]
-indent_size = 2
+indent_size = 4
 indent_style = space
 
 [*.svg]
@@ -79,16 +78,28 @@ indent_size = 2
 indent_style = space
 max_line_length = off
 
-[*.zsh]
+[*.yaml]
 indent_size = 2
+indent_style = space
+max_line_length = off
+
+[*.zsh]
+indent_size = 4
 indent_style = space
 
 [.bashrc]
-indent_size = 2
+indent_size = 4
 indent_style = space
 
+[.env*]
+insert_final_newline = false
+
+[.gitconfig]
+indent_size = 4
+indent_style = tab
+
 [.zshrc]
-indent_size = 2
+indent_size = 4
 indent_style = space
 
 [Makefile]

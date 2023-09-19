@@ -1,3 +1,5 @@
+// Copyright © 2023 MDSANIMA
+
 {
   "extends": "eslint:recommended",
   "plugins": ["header"],
@@ -6,6 +8,6 @@
     "linebreak-style": ["error", "unix"],
     "quotes": ["error", "double"],
     "semi": ["error", "never"],
-    "header/header": ["error", "block", [" Copyright © 2023 Marcin Różewski MDSANIMA "]]
+    "header/header": ["error", "block", [" Copyright © 2023 MDSANIMA "]]
   }
 }

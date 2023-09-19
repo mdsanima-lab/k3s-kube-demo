@@ -1,3 +1,5 @@
+// Copyright © 2023 MDSANIMA
+
 {
   "extends": "next/core-web-vitals"
 }
