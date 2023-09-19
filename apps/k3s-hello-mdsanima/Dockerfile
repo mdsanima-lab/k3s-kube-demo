@@ -1,7 +1,7 @@
-# Copyright © 2023 Marcin Różewski MDSANIMA
+# # Copyright © 2023 MDSANIMA
 
-# Pull node docker image.
-FROM node:18.15.0-alpine AS base
+# Pull the Node Docker image.
+FROM node:20.6.1-alpine AS base
 
 # Install dependencies only when needed.
 FROM base AS deps
@@ -37,7 +37,7 @@ COPY --from=builder /app/public ./public
 COPY --from=builder --chown=nextjs:nodejs /app/.next/standalone ./
 COPY --from=builder --chown=nextjs:nodejs /app/.next/static ./.next/static
 
-# Run app inside container.
+# Run the application inside a container.
 USER nextjs
 EXPOSE 3000
 ENV PORT 3000

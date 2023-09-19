@@ -1,14 +1,14 @@
-# Copyright © 2023 Marcin Różewski MDSANIMA
+# Copyright © 2023 MDSANIMA
 
-# Pull node docker image.
-FROM node:18.15.0-alpine
+# Pull the Node Docker image.
+FROM node:20.6.1-alpine
 
-# Building app image.
+# Building the application image.
 WORKDIR /app
 COPY package.json package-lock.json ./
 RUN npm ci
 COPY . .
 EXPOSE 3000
 
-# Run app inside container.
+# Running the application inside a container.
 CMD ["npm", "run", "start"]
