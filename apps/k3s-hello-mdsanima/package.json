@@ -2,66 +2,9 @@
   "name": "k3s-hello-mdsanima",
   "version": "0.3.1",
   "private": true,
-  "description": "This is a Next.js Hello World MDSANIMA Web App for testing Lightweight Kubernetes K3s Cluster.",
-  "standard-version": {
-    "infile": "CHANGELOG.md",
-    "skip": {
-      "bump": false,
-      "changelog": false,
-      "commit": false,
-      "tag": false
-    },
-    "types": [
-      {
-        "type": "feat",
-        "section": "FEATURES",
-        "hidden": false
-      },
-      {
-        "type": "fix",
-        "section": "BUG FIXES",
-        "hidden": false
-      },
-      {
-        "type": "docs",
-        "section": "DOCUMENTATION",
-        "hidden": false
-      },
-      {
-        "type": "frontend",
-        "section": "FRONTEND",
-        "hidden": false
-      },
-      {
-        "type": "backend",
-        "section": "BACKEND",
-        "hidden": false
-      },
-      {
-        "type": "test",
-        "section": "TESTING",
-        "hidden": false
-      },
-      {
-        "type": "build",
-        "section": "BUILD SYSTEM",
-        "hidden": true
-      },
-      {
-        "type": "ci",
-        "hidden": true
-      },
-      {
-        "type": "refactor",
-        "hidden": true
-      },
-      {
-        "type": "chore",
-        "hidden": true
-      }
-    ],
-    "header": "# CHANGELOG\n\nAll notable changes to this project will be documented in this file.\n\nPlease check [standard-version](https://github.com/conventional-changelog/standard-version)\nand documentation for commit guidelines. Also you should check\n[conventional-changelog](https://github.com/mdsanima/conventional-changelog) for more detail.\n\nDocomentation for _K3s Hello MDSANIMA_ is available at this repository on [README.md](README.md)\nfile be sure to check it.\n"
-  },
+  "license": "MIT",
+  "author": "mdsanima",
+  "description": "Simple demo Next.js app for testing Lightweight Kubernetes K3s cluster.",
   "scripts": {
     "dev": "next dev",
     "build": "next build",
@@ -81,20 +24,18 @@
     "check-beta": "npm run beta -- --dry-run",
     "test-skip": "npm run release -- --skip.changelog --dry-run"
   },
-  "author": "mdsanima",
-  "license": "Apache-2.0",
   "dependencies": {
-    "next": "^13.5.1",
     "react": "^18.2.0",
-    "react-dom": "^18.2.0"
+    "react-dom": "^18.2.0",
+    "next": "14.0.4"
   },
   "devDependencies": {
-    "@types/node": "^20.6.2",
-    "@types/react": "^18.2.22",
-    "@types/react-dom": "^18.2.7",
-    "eslint": "^8.49.0",
-    "eslint-config-next": "^13.5.1",
-    "standard-version": "^9.5.0",
-    "typescript": "^5.2.2"
+    "typescript": "^5.3.3",
+    "@types/node": "^20.10.6",
+    "@types/react": "^18.2.46",
+    "@types/react-dom": "^18.2.18",
+    "eslint": "^8.56.0",
+    "eslint-plugin-header": "^3.1.1",
+    "eslint-config-next": "14.0.4"
   }
 }
