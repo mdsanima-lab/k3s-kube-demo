@@ -1,6 +1,10 @@
-# Copyright © 2023 MDSANIMA
+# Copyright (c) 2023-2024 MDSANIMA DEV. All rights reserved.
+# Licensed under the MIT license.
 
-# https://editorconfig.org
+# This is a configuration file that helps maintain consistent coding styles for
+# multiple developers working on the same project across various editors and IDEs.
+# Documentation: https://editorconfig.org/
+
 
 root = true
 
@@ -46,6 +50,11 @@ end_of_line = lf
 indent_size = 2
 indent_style = space
 
+[*.mjs]
+indent_size = 2
+indent_style = space
+max_line_length = 120
+
 [*.ps1]
 indent_size = 4
 indent_style = space
@@ -87,12 +96,20 @@ max_line_length = off
 indent_size = 4
 indent_style = space
 
+[.commitlintrc]
+indent_size = 2
+
 [.bashrc]
 indent_size = 4
 indent_style = space
 
 [.env*]
 insert_final_newline = false
+
+[.eslint*]
+indent_size = 2
+indent_style = space
+max_line_length = 120
 
 [.gitconfig]
 indent_size = 4
