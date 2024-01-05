@@ -2,66 +2,9 @@
   "name": "k3s-kube-demo",
   "version": "0.1.0",
   "private": true,
-  "description": "Deploying Demo Apps in Lightweight Kubernetes K3s Cluster.",
-  "standard-version": {
-    "infile": "CHANGELOG.md",
-    "skip": {
-      "bump": false,
-      "changelog": false,
-      "commit": false,
-      "tag": false
-    },
-    "types": [
-      {
-        "type": "feat",
-        "section": "FEATURES",
-        "hidden": false
-      },
-      {
-        "type": "fix",
-        "section": "BUG FIXES",
-        "hidden": false
-      },
-      {
-        "type": "docs",
-        "section": "DOCUMENTATION",
-        "hidden": false
-      },
-      {
-        "type": "frontend",
-        "section": "FRONTEND",
-        "hidden": false
-      },
-      {
-        "type": "backend",
-        "section": "BACKEND",
-        "hidden": false
-      },
-      {
-        "type": "test",
-        "section": "TESTING",
-        "hidden": false
-      },
-      {
-        "type": "build",
-        "section": "BUILD SYSTEM",
-        "hidden": true
-      },
-      {
-        "type": "ci",
-        "hidden": true
-      },
-      {
-        "type": "refactor",
-        "hidden": true
-      },
-      {
-        "type": "chore",
-        "hidden": true
-      }
-    ],
-    "header": "# CHANGELOG\n\nAll notable changes to this project will be documented in this file.\n\nPlease check [standard-version](https://github.com/conventional-changelog/standard-version)\nand documentation for commit guidelines. Also you should check\n[conventional-changelog](https://github.com/mdsanima/conventional-changelog) for more detail.\n\nDocomentation for _K3s Kube Demo_ is available at this repository on [README.md](README.md)\nfile be sure to check it.\n"
-  },
+  "license": "MIT",
+  "author": "mdsanima",
+  "description": "Deploy demo apps in Lightweight Kubernetes K3s cluster.",
   "scripts": {
     "release": "standard-version --sign --tag-prefix k3s-kube-demo@",
     "major": "npm run release -- --release-as major",
@@ -77,11 +20,8 @@
     "check-beta": "npm run beta -- --dry-run",
     "test-skip": "npm run release -- --skip.changelog --dry-run"
   },
-  "author": "mdsanima",
-  "license": "Apache-2.0",
   "devDependencies": {
-    "eslint": "^8.49.0",
-    "eslint-plugin-header": "^3.1.1",
-    "standard-version": "^9.5.0"
+    "eslint": "^8.56.0",
+    "eslint-plugin-header": "^3.1.1"
   }
 }
