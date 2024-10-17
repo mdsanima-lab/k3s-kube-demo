@@ -23,7 +23,7 @@
     "test-skip": "npm run release -- --skip.changelog --dry-run"
   },
   "dependencies": {
-    "express": "^4.18.2"
+    "express": "^4.20.0"
   },
   "devDependencies": {
     "eslint": "^8.56.0",
