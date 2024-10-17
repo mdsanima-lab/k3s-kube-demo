@@ -1,0 +1,54 @@
+# Dependabot that automatically updates the packages to the latest version.
+
+# Default config
+---
+version: 2
+
+updates:
+  - package-ecosystem: github-actions
+    directory: /
+    schedule:
+      interval: daily
+      timezone: Europe/Warsaw
+      time: "12:00"
+    labels: [dependencies, workflow]
+
+  - package-ecosystem: docker
+    directory: /apps/k3s-hello-mdsanima
+    schedule:
+      interval: daily
+      timezone: Europe/Warsaw
+      time: "12:00"
+    labels: [dependencies, docker, k3s-hello-mdsanima]
+
+  - package-ecosystem: docker
+    directory: /apps/k3s-hello-world
+    schedule:
+      interval: daily
+      timezone: Europe/Warsaw
+      time: "12:00"
+    labels: [dependencies, docker, k3s-hello-world]
+
+  - package-ecosystem: npm
+    directory: /
+    schedule:
+      interval: daily
+      timezone: Europe/Warsaw
+      time: "12:00"
+    labels: [dependencies, npm, k3s-kube-demo]
+
+  - package-ecosystem: npm
+    directory: /apps/k3s-hello-mdsanima
+    schedule:
+      interval: daily
+      timezone: Europe/Warsaw
+      time: "12:00"
+    labels: [dependencies, npm, k3s-hello-mdsanima]
+
+  - package-ecosystem: npm
+    directory: /apps/k3s-hello-world
+    schedule:
+      interval: daily
+      timezone: Europe/Warsaw
+      time: "12:00"
+    labels: [dependencies, npm, k3s-hello-world]
