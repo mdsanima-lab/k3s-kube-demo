@@ -1,27 +1,39 @@
-# Copyright (c) 2023-2024 MDSANIMA DEV. All rights reserved.
-# Licensed under the MIT license.
+# The repository default labels for pull requests and issues.
 
-# This file is used to declaratively define the GitHub repository default labels.
-# Documentation: https://github.com/Financial-Times/github-label-sync/#label-config-file
-
-# Generic labels
+# General labels
+---
 - name: bug
   color: B60205
   description: Something isn't working
+- name: ci
+  color: 5AF3C0
+  description: Pull requests that update a GitHub Actions Workflow deps
 - name: database
   color: 097BA1
   description: The database tools
+- name: db
+  color: 98C3E1
+  description: The database tools
 - name: dependencies
+  color: 0066FF
+  description: Pull requests that update a dependency file
+- name: deps
   color: 0366D6
   description: Pull requests that update a dependency file
 - name: deployment
   color: D45E0E
   description: Kubernetes deployment configuration
-- name: dev
+- name: devel
   color: 0E8A16
   description: Tools for helping development
+- name: docker
+  color: 309D8D
+  description: Pull requests that update a Dockerfile deps
 - name: documentation
   color: 0075CA
+  description: Improvements or additions to documentation
+- name: docs
+  color: 20967C
   description: Improvements or additions to documentation
 - name: done
   color: 1D76DB
@@ -36,8 +48,11 @@
   color: FF7800
   description: This is a cool idea
 - name: feature
-  color: 67AF00
+  color: 0086CC
   description: New features ideas
+- name: good first issue
+  color: 7057FF
+  description: Good for newcomers
 - name: help wanted
   color: 008672
   description: Extra attention is needed
@@ -47,17 +62,23 @@
 - name: kubernetes
   color: 2CF1BA
   description: Container orchestration stuff
+- name: nodejs
+  color: E23983
+  description: Pull requests that update a Node.js deps
+- name: npm
+  color: 8EBA74
+  description: Pull requests that update a Node.js deps
 - name: pip
   color: 2E79F8
-  description: Pull requests that update a dependency file
+  description: Pull requests that update a Python deps
 - name: prod
   color: 2D13F1
   description: Production environment
 - name: python
   color: 006B75
-  description: Pull requests that update a dependency file
+  description: Pull requests that update a Python deps
 - name: question
-  color: D876E3
+  color: E54979
   description: Further information is requested
 - name: service
   color: 3EFA45
@@ -68,11 +89,17 @@
 - name: wontfix
   color: FBCA04
   description: This will not be worked on
+- name: workflow
+  color: FD582D
+  description: Pull requests that update a GitHub Actions Workflow deps
 
 # Application labels
+- name: k3s-kube-demo
+  color: 8B080F
+  description: Top level main project only for tracking version and changelog
 - name: k3s-hello-mdsanima
   color: 0052CC
-  description: Docker image application
+  description: Docker image apps for deploy in K3s cluster
 - name: k3s-hello-world
   color: 006b75
-  description: Docker image application
+  description: Docker image apps for deploy in K3s cluster
