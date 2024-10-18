@@ -6,7 +6,7 @@
   "author": "mdsanima",
   "description": "Deploy demo apps in Lightweight Kubernetes K3s cluster.",
   "scripts": {
-    "release": "standard-version --sign --tag-prefix k3s-kube-demo@",
+    "release": "standard-version --sign --tag-prefix k3s-kube-demo-v",
     "major": "npm run release -- --release-as major",
     "minor": "npm run release -- --release-as minor",
     "patch": "npm run release -- --release-as patch",
