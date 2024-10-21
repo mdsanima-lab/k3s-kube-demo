@@ -21,7 +21,7 @@
     "test-skip": "npm run release -- --skip.changelog --dry-run"
   },
   "devDependencies": {
-    "eslint": "^9.12.0",
+    "eslint": "^9.13.0",
     "eslint-plugin-header": "^3.1.1"
   }
 }
