@@ -33,7 +33,7 @@
     "typescript": "^7.0.2",
     "@types/node": "^26.2.0",
     "@types/react": "^19.2.18",
-    "@types/react-dom": "^19.2.4",
+    "@types/react-dom": "^19.2.5",
     "eslint": "^10.9.0",
     "eslint-plugin-header": "^3.1.1",
     "eslint-config-next": "16.3.2"
