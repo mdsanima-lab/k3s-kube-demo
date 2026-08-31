@@ -1,7 +1,7 @@
 # # Copyright © 2023 MDSANIMA
 
 # Pull the Node Docker image.
-FROM node:26.7.0-alpine AS base
+FROM node:26.8.1-alpine AS base
 
 # Install dependencies only when needed.
 FROM base AS deps
