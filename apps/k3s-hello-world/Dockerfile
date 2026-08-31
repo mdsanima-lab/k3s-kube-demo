@@ -1,7 +1,7 @@
 # Copyright © 2023 MDSANIMA
 
 # Pull the Node Docker image.
-FROM node:26.7.0-alpine
+FROM node:26.8.1-alpine
 
 # Building the application image.
 WORKDIR /app
